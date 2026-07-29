@@ -21,6 +21,26 @@ async function fetchMovies() {
     }
 
     // ... 영화 카드 생성 로직 ...
+    if (movies.length > 0) {
+      showMovie(currentIndex);
+    }
+
+    movies.forEach((movie) => {
+      const card = document.createElement("div");
+      card.classList.add("movie-card");
+
+      const poster = document.createElement("img");
+      poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+      poster.alt = movie.title;
+
+      const title = document.createElement("div");
+      title.classList.add("movie-title");
+      title.textContent = movie.title;
+
+      card.appendChild(poster);
+      card.appendChild(title);
+      container.appendChild(card);
+    });
   } catch (error) {
     console.error("영화 데이터를 불러오는 중 오류 발생:", error);
 
