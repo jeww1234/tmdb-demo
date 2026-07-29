@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 상영 영화</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <div class="logo">🎬 MovieApp</div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">TV 프로그램</a></li>
+            <li><a href="#">인기</a></li>
+            <li><a href="#">현재 상영작</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 메인 영역: 왼쪽 포스터+제목 / 오른쪽 트레일러 -->
+    <section class="main">
+        <div class="movie-info" id="movieInfo"></div>
+        <div class="trailer-area">
+            <button id="prevBtn" class="arrow left" style="display:none;">&#9664;</button>
+            <div id="trailerPlayer"></div>
+            <button id="nextBtn" class="arrow right">&#9654;</button>
+        </div>
+    </section>
+
+    <header>🎥 현재 상영 중인 영화 목록</header>
+    <div class="movie-container" id="movies"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
