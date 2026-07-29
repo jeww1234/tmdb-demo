@@ -154,6 +154,19 @@ header {
   font-weight: bold;
 }
 
+/*에러 메시지*/
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 200px; /* 영역 확보 */
+  color: #f00;
+  font-size: 18px;
+}
+
+
 /* 기본 데스크톱 레이아웃은 그대로 두고, 모바일용 media query 추가 */
 @media (max-width: 768px) {
   .nav-links {
