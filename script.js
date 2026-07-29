@@ -66,7 +66,7 @@ async function showMovie(index) {
 
     if (trailer) {
       trailerContainer.innerHTML = `
-        <iframe src="https://www.youtube.com/embed/${trailer.key}?autoplay=1&mute=1&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/${trailer.key}?autoplay=1&mute=0&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       `;
     } else {
       trailerContainer.innerHTML = `
