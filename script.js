@@ -1,5 +1,4 @@
-import { API_KEY } from "./config.js";
-
+const API_KEY = "aa8830bf24a30fe8fd1dbb2fc4389c1b";
 const API_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=ko-KR`;
 
 let movies = [];
